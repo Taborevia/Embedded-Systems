@@ -72,10 +72,10 @@ void Wheels::goForward2(int cm){
 //   stop();
 // }
 void Wheels::goBack(int cm){
-  cntlimit = 2*cm;
-  cnt0 = 0;
-  cnt1 = 0;
+  setSpeed(100);
   back();
+  delay(25*cm);
+  stop();
 }
 
 void Wheels::setSpeedRight(uint8_t s)
